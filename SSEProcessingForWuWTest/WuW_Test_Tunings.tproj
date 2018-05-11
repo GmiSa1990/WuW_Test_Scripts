@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tuneproject version="67305472" streamversion="3">
+    <name>My Project</name>
+    <libraries count="1">
+        <library>
+            <libname>sse</libname>
+            <libversion>4.1.0.0</libversion>
+            <libmode>normal</libmode>
+            <name>SSE 4.1</name>
+            <paramsets count="3">
+                <paramset>
+                    <libname>sse</libname>
+                    <valueset>
+                        <name>7xMicIn 0xReferenceIn 2MicOut ASL ABF SPF SDR</name>
+                        <shortcomment></shortcomment>
+                        <comment></comment>
+                        <exportnametemplate name="iot_sse41_7mic_0ref_2out_asl_abf_spf_sdr" path="%ProjectPath%"/>
+                        <value modname="General" submodname="Main" name="OperationMode" comment="" specified="" dim="1x1">
+                            <field dim="0x0">VoiceRecognition</field>
+                        </value>
+                        <value modname="Snd" submodname="Main" name="MicInCnt" comment="" specified="" dim="1x1">
+                            <field dim="0x0">7</field>
+                        </value>
+                        <value modname="Snd" submodname="Main" name="RefInCnt" comment="" specified="" dim="1x1">
+                            <field dim="0x0">0</field>
+                        </value>
+                        <value modname="Snd" submodname="Main" name="AcZoneCnt" comment="" specified="" dim="1x1">
+                            <field dim="0x0">2</field>
+                        </value>
+                        <value modname="Snd" submodname="Main" name="MicProcCnt" comment="" specified="" dim="1x1">
+                            <field dim="0x0">2</field>
+                        </value>
+                        <value modname="General" submodname="Main" name="FrameShift" comment="" specified="" dim="1x1">
+                            <field dim="0x0">256</field>
+                        </value>
+                        <value modname="General" submodname="Main" name="MaxProcessingFreq" comment="" specified="" dim="1x1">
+                            <field dim="0x0">8000</field>
+                        </value>
+                        <value modname="Snd" submodname="MicAna" name="MaxLatency" comment="" specified="" dim="1x1">
+                            <field dim="0x0">100</field>
+                        </value>
+                        <value modname="Snd" submodname="Main" name="MicInEqInit" comment="" specified="" dim="1x1">
+                            <field dim="0x0">0</field>
+                        </value>
+                        <value modname="Snd" submodname="Aec" name="FilterLength" comment="" specified="" dim="1x1">
+                            <field dim="0x0">150</field>
+                        </value>
+                        <value modname="Snd" submodname="Array0" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">127</field>
+                            <field dim="1x0">-2</field>
+                            <field dim="2x0">-2</field>
+                            <field dim="3x0">7</field>
+                        </value>
+                        <value modname="Snd" submodname="Array0" name="MicrophoneArrayGeometry" comment="" specified="" dim="1x1">
+                            <field dim="0x0">3</field>
+                        </value>
+                        <value modname="Snd" submodname="AcZone0" name="BFMode" comment="" specified="" dim="1x1">
+                            <field dim="0x0">3</field>
+                        </value>
+                        <value modname="Snd" submodname="AcZone0" name="SpfInit" comment="" specified="" dim="1x1">
+                            <field dim="0x0">true</field>
+                        </value>
+                        <value modname="Snd" submodname="AslCore0" name="LocalizationMode" comment="" specified="" dim="1x1">
+                            <field dim="0x0">2</field>
+                        </value>
+                        <value modname="Snd" submodname="AcZone0" name="AslInit" comment="" specified="" dim="1x1">
+                            <field dim="0x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="AslSpecific0" name="DoaBufLength" comment="" specified="" dim="1x1">
+                            <field dim="0x0">1600</field>
+                        </value>
+                        <value modname="Snd" submodname="Array1" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">127</field>
+                            <field dim="1x0">0</field>
+                            <field dim="2x0">-2</field>
+                            <field dim="3x0">7</field>
+                        </value>
+                        <value modname="Snd" submodname="AcZone1" name="BFMode" comment="" specified="" dim="1x1">
+                            <field dim="0x0">3</field>
+                        </value>
+                        <value modname="Snd" submodname="AcZone1" name="SpfInit" comment="" specified="" dim="1x1">
+                            <field dim="0x0">true</field>
+                        </value>
+                        <value modname="Snd" submodname="AcZone1" name="AslInit" comment="" specified="" dim="1x1">
+                            <field dim="0x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="AslSpecific1" name="AngularRangeAzimuth" comment="" specified="" dim="1x1">
+                            <field dim="0x0">360</field>
+                        </value>
+                        <value modname="Snd" submodname="AslSpecific1" name="DoaBufLength" comment="" specified="" dim="1x1">
+                            <field dim="0x0">1600</field>
+                        </value>
+                        <value modname="Snd" submodname="Array2" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">7</field>
+                        </value>
+                        <value modname="Snd" submodname="Array3" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">7</field>
+                        </value>
+                        <value modname="Snd" submodname="Array4" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">7</field>
+                        </value>
+                        <value modname="Snd" submodname="Array5" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">7</field>
+                        </value>
+                        <value modname="Snd" submodname="Array6" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">7</field>
+                        </value>
+                        <value modname="Snd" submodname="Array7" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">7</field>
+                        </value>
+                        <value modname="Snd" submodname="Pic" name="AcousticZoneCombining" comment="" specified="" dim="8x3">
+                            <field dim="0x0">0</field>
+                            <field dim="1x0">0</field>
+                            <field dim="2x0">0</field>
+                            <field dim="3x0">0</field>
+                            <field dim="4x0">0</field>
+                            <field dim="5x0">0</field>
+                            <field dim="6x0">0</field>
+                            <field dim="7x0">0</field>
+                            <field dim="0x1">0</field>
+                            <field dim="1x1">0</field>
+                            <field dim="2x1">0</field>
+                            <field dim="3x1">0</field>
+                            <field dim="4x1">0</field>
+                            <field dim="5x1">0</field>
+                            <field dim="6x1">0</field>
+                            <field dim="7x1">0</field>
+                            <field dim="0x2">1</field>
+                            <field dim="1x2">2</field>
+                            <field dim="2x2">1</field>
+                            <field dim="3x2">1</field>
+                            <field dim="4x2">1</field>
+                            <field dim="5x2">1</field>
+                            <field dim="6x2">1</field>
+                            <field dim="7x2">1</field>
+                        </value>
+                        <value modname="Snd" submodname="Main" name="SdrInit" comment="" specified="" dim="1x1">
+                            <field dim="0x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="Main" name="RbsInit" comment="" specified="" dim="1x1">
+                            <field dim="0x0">0</field>
+                        </value>
+                        <value modname="Snd" submodname="Main" name="SnsInit" comment="" specified="" dim="1x1">
+                            <field dim="0x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="Main" name="EqInit" comment="" specified="" dim="1x1">
+                            <field dim="0x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="Main" name="MicProcEqInit" comment="" specified="" dim="1x1">
+                            <field dim="0x0">0</field>
+                        </value>
+                        <value modname="Snd" submodname="AcZone0" name="SpeakerTracking" comment="" specified="" dim="1x1">
+                            <field dim="0x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="AslCore0" name="SteeringAngleElevation" comment="" specified="" dim="1x1">
+                            <field dim="0x0">20</field>
+                        </value>
+                        <value modname="Snd" submodname="MicAna" name="Latency" comment="" specified="" dim="1x1">
+                            <field dim="0x0">16</field>
+                        </value>
+                        <value modname="Snd" submodname="Sdr0" name="Aggressiveness" comment="" specified="" dim="1x1">
+                            <field dim="0x0">40</field>
+                        </value>
+                        <value modname="Snd" submodname="Sdr0" name="T60Start" comment="" specified="" dim="1x1">
+                            <field dim="0x0">500</field>
+                        </value>
+                        <value modname="Snd" submodname="Sdr0" name="T60EstimationDisable" comment="" specified="" dim="1x1">
+                            <field dim="0x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="NrMain0" name="NoiseDepCorrectionActive" comment="" specified="" dim="1x1">
+                            <field dim="0x0">0</field>
+                        </value>
+                        <value modname="Snd" submodname="NrMain0" name="ComfNoiseActive" comment="" specified="" dim="1x1">
+                            <field dim="0x0">0</field>
+                        </value>
+                        <value modname="Snd" submodname="AcZone1" name="SpeakerTracking" comment="" specified="" dim="1x1">
+                            <field dim="0x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="Sdr1" name="Aggressiveness" comment="" specified="" dim="1x1">
+                            <field dim="0x0">40</field>
+                        </value>
+                        <value modname="Snd" submodname="Sdr1" name="T60Start" comment="" specified="" dim="1x1">
+                            <field dim="0x0">500</field>
+                        </value>
+                        <value modname="Snd" submodname="Sdr1" name="T60EstimationDisable" comment="" specified="" dim="1x1">
+                            <field dim="0x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="NrMain1" name="NoiseDepCorrectionActive" comment="" specified="" dim="1x1">
+                            <field dim="0x0">0</field>
+                        </value>
+                        <value modname="Snd" submodname="NrMain1" name="ComfNoiseActive" comment="" specified="" dim="1x1">
+                            <field dim="0x0">0</field>
+                        </value>
+                        <value modname="INTERNAL" submodname="" name="ArrayRadius0" comment="" specified="" dim="1x1">
+                            <field dim="0x0">42000</field>
+                        </value>
+                        <value modname="Snd" submodname="AcZone0" name="BfSteeringAngle" comment="" specified="" dim="3x1">
+                            <field dim="0x0">90</field>
+                            <field dim="1x0">20</field>
+                            <field dim="2x0">55</field>
+                        </value>
+                        <value modname="Snd" submodname="AcZone1" name="BfSteeringAngle" comment="" specified="" dim="3x1">
+                            <field dim="0x0">270</field>
+                            <field dim="1x0">20</field>
+                            <field dim="2x0">55</field>
+                        </value>
+                        <projectsettings>
+                            <OutputSCD version="2.0"><outputSettings saveToFile="y" filePath="C:\Users\t_wolff\WORK\Projekte\2018\02_26__DualBeamTuningForWuWTest" sendMethod="scp" options="" password=""/>
+                            </OutputSCD>
+                        </projectsettings>
+                        <librarylinks/>
+                    </valueset>
+                </paramset>
+                <paramset>
+                    <libname>sse</libname>
+                    <valueset>
+                        <name>7xMicIn 0xReferenceIn 1MicOut ABF SPF SDR</name>
+                        <shortcomment></shortcomment>
+                        <comment></comment>
+                        <exportnametemplate name="iot_sse41_7mic_0ref_1out_abf_spf_sdr" path="%ProjectPath%"/>
+                        <value modname="General" submodname="Main" name="OperationMode" comment="" specified="" dim="1x1">
+                            <field dim="0x0">VoiceRecognition</field>
+                        </value>
+                        <value modname="Snd" submodname="Main" name="MicInCnt" comment="" specified="" dim="1x1">
+                            <field dim="0x0">7</field>
+                        </value>
+                        <value modname="General" submodname="Main" name="FrameShift" comment="" specified="" dim="1x1">
+                            <field dim="0x0">256</field>
+                        </value>
+                        <value modname="General" submodname="Main" name="MaxProcessingFreq" comment="" specified="" dim="1x1">
+                            <field dim="0x0">8000</field>
+                        </value>
+                        <value modname="Snd" submodname="MicAna" name="MaxLatency" comment="" specified="" dim="1x1">
+                            <field dim="0x0">100</field>
+                        </value>
+                        <value modname="Snd" submodname="Array0" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">127</field>
+                            <field dim="1x0">-2</field>
+                            <field dim="2x0">-2</field>
+                            <field dim="3x0">7</field>
+                        </value>
+                        <value modname="Snd" submodname="Array0" name="MicrophoneArrayGeometry" comment="" specified="" dim="1x1">
+                            <field dim="0x0">3</field>
+                        </value>
+                        <value modname="Snd" submodname="AcZone0" name="BFMode" comment="" specified="" dim="1x1">
+                            <field dim="0x0">3</field>
+                        </value>
+                        <value modname="Snd" submodname="AcZone0" name="SpfInit" comment="" specified="" dim="1x1">
+                            <field dim="0x0">true</field>
+                        </value>
+                        <value modname="Snd" submodname="Array1" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">7</field>
+                        </value>
+                        <value modname="Snd" submodname="Array2" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">7</field>
+                        </value>
+                        <value modname="Snd" submodname="Array3" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">7</field>
+                        </value>
+                        <value modname="Snd" submodname="Array4" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">7</field>
+                        </value>
+                        <value modname="Snd" submodname="Array5" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">7</field>
+                        </value>
+                        <value modname="Snd" submodname="Array6" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">7</field>
+                        </value>
+                        <value modname="Snd" submodname="Array7" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">7</field>
+                        </value>
+                        <value modname="Snd" submodname="Pic" name="AcousticZoneCombining" comment="" specified="" dim="8x3">
+                            <field dim="0x0">0</field>
+                            <field dim="1x0">0</field>
+                            <field dim="2x0">0</field>
+                            <field dim="3x0">0</field>
+                            <field dim="4x0">0</field>
+                            <field dim="5x0">0</field>
+                            <field dim="6x0">0</field>
+                            <field dim="7x0">0</field>
+                            <field dim="0x1">0</field>
+                            <field dim="1x1">0</field>
+                            <field dim="2x1">0</field>
+                            <field dim="3x1">0</field>
+                            <field dim="4x1">0</field>
+                            <field dim="5x1">0</field>
+                            <field dim="6x1">0</field>
+                            <field dim="7x1">0</field>
+                            <field dim="0x2">1</field>
+                            <field dim="1x2">1</field>
+                            <field dim="2x2">1</field>
+                            <field dim="3x2">1</field>
+                            <field dim="4x2">1</field>
+                            <field dim="5x2">1</field>
+                            <field dim="6x2">1</field>
+                            <field dim="7x2">1</field>
+                        </value>
+                        <value modname="Snd" submodname="Main" name="SdrInit" comment="" specified="" dim="1x1">
+                            <field dim="0x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="Main" name="SnsInit" comment="" specified="" dim="1x1">
+                            <field dim="0x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="MicAna" name="Latency" comment="" specified="" dim="1x1">
+                            <field dim="0x0">16</field>
+                        </value>
+                        <value modname="Snd" submodname="Sdr0" name="Aggressiveness" comment="" specified="" dim="1x1">
+                            <field dim="0x0">40</field>
+                        </value>
+                        <value modname="Snd" submodname="Sdr0" name="T60Start" comment="" specified="" dim="1x1">
+                            <field dim="0x0">500</field>
+                        </value>
+                        <value modname="Snd" submodname="Sdr0" name="T60EstimationDisable" comment="" specified="" dim="1x1">
+                            <field dim="0x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="NrMain0" name="NoiseDepCorrectionActive" comment="" specified="" dim="1x1">
+                            <field dim="0x0">0</field>
+                        </value>
+                        <value modname="Snd" submodname="NrMain0" name="ComfNoiseActive" comment="" specified="" dim="1x1">
+                            <field dim="0x0">0</field>
+                        </value>
+                        <value modname="INTERNAL" submodname="" name="ArrayRadius0" comment="" specified="" dim="1x1">
+                            <field dim="0x0">42000</field>
+                        </value>
+                        <value modname="Snd" submodname="AcZone0" name="BfSteeringAngle" comment="" specified="" dim="3x1">
+                            <field dim="0x0">300</field>
+                            <field dim="1x0">20</field>
+                            <field dim="2x0">55</field>
+                        </value>
+                        <projectsettings>
+                            <OutputSCD version="2.0"><outputSettings saveToFile="y" filePath="C:\Users\t_wolff\WORK\Projekte\2018\02_26__DualBeamTuningForWuWTest" sendMethod="scp" options="" password=""/>
+                            </OutputSCD>
+                        </projectsettings>
+                        <librarylinks/>
+                    </valueset>
+                </paramset>
+                <paramset>
+                    <libname>sse</libname>
+                    <valueset>
+                        <name>1xMicIn 0xReferenceIn 1MicOut NR SDR</name>
+                        <shortcomment></shortcomment>
+                        <comment></comment>
+                        <exportnametemplate name="iot_sse41_1mic_0ref_1out_nr_sdr" path="%ProjectPath%"/>
+                        <value modname="General" submodname="Main" name="OperationMode" comment="" specified="" dim="1x1">
+                            <field dim="0x0">VoiceRecognition</field>
+                        </value>
+                        <value modname="Snd" submodname="Main" name="MicInCnt" comment="" specified="" dim="1x1">
+                            <field dim="0x0">1</field>
+                        </value>
+                        <value modname="General" submodname="Main" name="FrameShift" comment="" specified="" dim="1x1">
+                            <field dim="0x0">256</field>
+                        </value>
+                        <value modname="General" submodname="Main" name="MaxProcessingFreq" comment="" specified="" dim="1x1">
+                            <field dim="0x0">8000</field>
+                        </value>
+                        <value modname="Snd" submodname="MicAna" name="MaxLatency" comment="" specified="" dim="1x1">
+                            <field dim="0x0">100</field>
+                        </value>
+                        <value modname="Snd" submodname="Array0" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="AcZone0" name="BFMode" comment="" specified="" dim="1x1">
+                            <field dim="0x0">3</field>
+                        </value>
+                        <value modname="Snd" submodname="AcZone0" name="SpfInit" comment="" specified="" dim="1x1">
+                            <field dim="0x0">true</field>
+                        </value>
+                        <value modname="Snd" submodname="Array1" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="Array2" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="Array3" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="Array4" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="Array5" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="Array6" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="Array7" name="InputMask" comment="" specified="" dim="4x1">
+                            <field dim="0x0">1</field>
+                            <field dim="1x0">-3</field>
+                            <field dim="2x0">-3</field>
+                            <field dim="3x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="Pic" name="AcousticZoneCombining" comment="" specified="" dim="8x3">
+                            <field dim="0x0">0</field>
+                            <field dim="1x0">0</field>
+                            <field dim="2x0">0</field>
+                            <field dim="3x0">0</field>
+                            <field dim="4x0">0</field>
+                            <field dim="5x0">0</field>
+                            <field dim="6x0">0</field>
+                            <field dim="7x0">0</field>
+                            <field dim="0x1">0</field>
+                            <field dim="1x1">0</field>
+                            <field dim="2x1">0</field>
+                            <field dim="3x1">0</field>
+                            <field dim="4x1">0</field>
+                            <field dim="5x1">0</field>
+                            <field dim="6x1">0</field>
+                            <field dim="7x1">0</field>
+                            <field dim="0x2">1</field>
+                            <field dim="1x2">1</field>
+                            <field dim="2x2">1</field>
+                            <field dim="3x2">1</field>
+                            <field dim="4x2">1</field>
+                            <field dim="5x2">1</field>
+                            <field dim="6x2">1</field>
+                            <field dim="7x2">1</field>
+                        </value>
+                        <value modname="Snd" submodname="Main" name="SdrInit" comment="" specified="" dim="1x1">
+                            <field dim="0x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="Main" name="SnsInit" comment="" specified="" dim="1x1">
+                            <field dim="0x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="MicAna" name="Latency" comment="" specified="" dim="1x1">
+                            <field dim="0x0">16</field>
+                        </value>
+                        <value modname="Snd" submodname="Sdr0" name="Aggressiveness" comment="" specified="" dim="1x1">
+                            <field dim="0x0">40</field>
+                        </value>
+                        <value modname="Snd" submodname="Sdr0" name="T60Start" comment="" specified="" dim="1x1">
+                            <field dim="0x0">500</field>
+                        </value>
+                        <value modname="Snd" submodname="Sdr0" name="T60EstimationDisable" comment="" specified="" dim="1x1">
+                            <field dim="0x0">1</field>
+                        </value>
+                        <value modname="Snd" submodname="NrMain0" name="NoiseDepCorrectionActive" comment="" specified="" dim="1x1">
+                            <field dim="0x0">0</field>
+                        </value>
+                        <value modname="Snd" submodname="NrMain0" name="ComfNoiseActive" comment="" specified="" dim="1x1">
+                            <field dim="0x0">0</field>
+                        </value>
+                        <value modname="INTERNAL" submodname="" name="ArrayRadius0" comment="" specified="" dim="1x1">
+                            <field dim="0x0">42000</field>
+                        </value>
+                        <projectsettings>
+                            <OutputSCD version="2.0"><outputSettings saveToFile="y" filePath="C:\Users\t_wolff\WORK\Projekte\2018\02_26__DualBeamTuningForWuWTest" sendMethod="scp" options="" password=""/>
+                            </OutputSCD>
+                        </projectsettings>
+                        <librarylinks/>
+                    </valueset>
+                </paramset>
+            </paramsets>
+        </library>
+    </libraries>
+    <targets count="0"/>
+    <targetconnections/>
+    <layout>
+        <parametermanager>
+            <paramsetidentifier>SSE 4.1|7xMicIn 0xReferenceIn 2MicOut ASL ABF SPF SDR</paramsetidentifier>
+        </parametermanager>
+        <editorwindows/>
+        <mainlayout>
+            <state>AAAA/wAAAAH9AAAAAwAAAAAAAAO8AAAELvwCAAAAA/sAAAAUAHAAcgBvAGoAZQBjAHQAbgBhAHYBAAAAFQAAARcAAABdAP////sAAAASAHMAaQBnAG4AYQBsAG4AYQB2AAAAAVkAAADnAAAAKgD////7AAAAEABwAGEAcgBhAG0AbgBhAHYBAAABMAAAAxMAAACrAP///wAAAAEAAAO8AAAELvwCAAAAAfwAAAAVAAAELgAAAIoA/////AEAAAAC+wAAABAAaABlAGwAcAB2AGkAZQB3AAAAAY4AAAC8AAAAvAD////7AAAAEgB0AHUAbgBlAHAAYQByAGEAbQEAAAPEAAADvAAAAJkA////AAAAAwAAB4AAAAA0/AEAAAAC+wAAABIAdABhAHIAZwBlAHQAbgBhAHYBAAAAAAAAApIAAABQAP////sAAAASAHQAYQByAGcAZQB0AGwAbwBnAQAAApYAAATqAAAAUAD///8AAAAAAAAELgAAAAQAAAAEAAAACAAAAAj8AAAAAA==</state>
+        </mainlayout>
+    </layout>
+    <projectsettings/>
+</tuneproject>
