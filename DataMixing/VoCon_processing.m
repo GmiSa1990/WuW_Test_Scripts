@@ -1,4 +1,4 @@
-%%
+%% collect all the path of audio.
 if 1
     clear;clc;
     sFileListLocation = 'C:\sse\iot_test\asr_result\clean_4p1\file_list\';
@@ -71,4 +71,13 @@ for i = 1 : length(sProcFile)
    process_cmd = ['VoConWuwGateRecTest.exe --log=',sLogName,' --wavelist=',sListName,' --config=cfg.txt'];
    system(process_cmd);
    fprintf('%d / %d is done',i,length(sProcFile));
+end
+
+function res = save_fileList(path, sFileListLocation, sFileListName)
+    fileList = getAllFiles(path);
+    fileID = fopen([sFileListLocation,sFileListName],'w+');
+    for i = 1 : length(fileList)
+        fprintf(fileID,'%s\n',fileList{i});
+    end
+    res = fclose(fileID);
 end
