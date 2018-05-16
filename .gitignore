@@ -4,5 +4,8 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 DataMixing/*.asv
-SSEProcessingForWuWTest/*
+SSEProcessingForWuWTest/*.dll
+SSEProcessingForWuWTest/*.exe 
+SSEProcessingForWuWTest/*.scd
+SSEProcessingForWuWTest/*.v
 ProcessRecogResult/*.mat

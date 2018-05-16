@@ -1,51 +1,48 @@
-function score = readResults
-% Read result files of WuW recognition tests and plot the results
+function score = readResults(resultfolder)
+    % Read result files of WuW recognition tests and plot the results
 
+    % parse the output files
+    result = parseFiles( resultfolder );
 
-resultfolder = 'C:\Users\guangming.xue\Desktop\result\fr_res';
+    % fuse the results 
+    fusefnct = @( x, y ) max( x, y );
+    fusedData = fuseresults( result, fusefnct );
 
-% parse the output files
-result = parseFiles( resultfolder );
+    % apply threshold
+    threshold = 4500;
+    score = applyThreshold( fusedData, threshold );
 
-% fuse the results 
-fusefnct = @( x, y ) max( x, y );
-fusedData = fuseresults( result, fusefnct );
+    % plot results
+    algos = {'7Mic2Out', '7Mic1Out', '1Mic1Out'};
+    distances = {'2m', '3m', '4m' };
+    interference = {'RockMusic_Sax', 'SoftMusic_MyHeartWillGoOn', 'SoftMusic_Memory', 'Speech_TeBieDeZuoYe' };
 
-% apply threshold
-threshold = 4500;
-score = applyThreshold( fusedData, threshold );
+    resulttable = nan( numel(algos), numel(distances), numel(interference) );
+    for k=1:numel(algos)
+        
+        allresults = score.(['x' algos{k}]).xSNR8dB; % use 8dB only
 
-% plot results
-algos = {'7Mic2Out', '7Mic1Out', '1Mic1Out'};
-distances = {'2m', '3m', '4m' };
-interference = {'RockMusic_Sax', 'SoftMusic_MyHeartWillGoOn', 'SoftMusic_Memory', 'Speech_TeBieDeZuoYe' };
-
-resulttable = nan( numel(algos), numel(distances), numel(interference) );
-for k=1:numel(algos)
-    
-    allresults = score.(['x' algos{k}]).xSNR8dB; % use 8dB only
-
-    fnames = fieldnames( allresults );
-    
-    for l = 1:numel(distances)
-        for m = 1:numel( interference )
-           resulttable(k, l, m ) =  allresults.( fnames{  contains( fnames, distances{l} ) & contains( fnames, interference{m} ) } );
+        fnames = fieldnames( allresults );
+        
+        for l = 1:numel(distances)
+            for m = 1:numel( interference )
+            resulttable(k, l, m ) =  allresults.( fnames{  contains( fnames, distances{l} ) & contains( fnames, interference{m} ) } );
+            end
         end
+        
     end
-    
-end
 
-figure
-for k = 1:numel( distances )
-    subplot( numel( distances ), 1, k );
-    bar( 1:numel(interference), squeeze( resulttable(:,k,:) )' );
-    set( gca, 'XTick', 1:numel(interference), 'XTickLabel', interference, 'TickLabelInterpreter', 'none' );
-    legend( algos );
-    ylim( [0 100] );
-    title( distances{k} );
-    grid on;
-    ylabel( 'WuW recognition rate [%]' );
-end
+    figure
+    for k = 1:numel( distances )
+        subplot( numel( distances ), 1, k );
+        bar( 1:numel(interference), squeeze( resulttable(:,k,:) )' );
+        set( gca, 'XTick', 1:numel(interference), 'XTickLabel', interference, 'TickLabelInterpreter', 'none' );
+        legend( algos );
+        ylim( [0 100] );
+        title( distances{k} );
+        grid on;
+        ylabel( 'WuW recognition rate [%]' );
+    end
 
 end
 
