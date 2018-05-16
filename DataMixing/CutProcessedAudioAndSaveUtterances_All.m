@@ -3,11 +3,11 @@ clear; clc;
 %% Cutting Recording
 
 sOriginalRecordingsDir = 'C:\sse\iot_test\7MicUCACArray_SSE4pxTesting_ASRTest\xatx_WuTaiShan_WuWRecordings_20180227\xatx_2m_300D\';
-sProcessedAudioDir     = 'C:\sse\iot_test\7MicUCACArray_SSE4pxTesting_ASRTest\WuW_XATX_InterferedProcessed\SH_RoomWuTaiShan2\';
-sCuttedAudioDir        = 'C:\sse\iot_test\7MicUCACArray_SSE4pxTesting_ASRTest\WuW_XATX_InterferedProcessedCutted\SH_RoomWuTaiShan2\';
+sProcessedAudioDir     = 'C:\sse\iot_test\7MicUCACArray_SSE4pxTesting_ASRTest\WuW_XATX_InterferedProcessed\Round2_forRelease\';
+sCuttedAudioDir        = 'C:\sse\iot_test\7MicUCACArray_SSE4pxTesting_ASRTest\WuW_XATX_InterferedProcessedCutted\Round2_forRelease\';
 
-sProcessLable = {'7Mic1Out'};
-%sProcessLable = {'7Mic2Out_SSE4p1','7Mic2Out_SSE4p2'};
+sProcessLable = {'Interfered','Clean'};
+
 sSNR          = {'SNR8dB'}; %,'SNR5dB','SNR1dB'
 
 for i_sProcessLable = 1% : length(sProcessLable)
@@ -18,13 +18,13 @@ for i_sProcessLable = 1% : length(sProcessLable)
     mkdir(sCuttedAudioSubDir);
     
     %Cut Clean Processed Audio
-    if 0
+    if 1
         for i_sSNR = 1 : length(sSNR)
 
             sProcessedAudioSubSubDir = [sProcessedAudioSubDir, sSNR{i_sSNR}, '\'];
             sCuttedAudioSubSubDir    = [sCuttedAudioSubDir   , sSNR{i_sSNR}, '\'];
 
-            mkdir(sProcessedAudioSubSubDir);
+            %mkdir(sProcessedAudioSubSubDir);
             mkdir(sCuttedAudioSubSubDir);
 
             iLeadingSilence = 60000;
@@ -38,8 +38,8 @@ for i_sProcessLable = 1% : length(sProcessLable)
     end
     
     %Cut Clean Processed Audio
-    sProcessedAudioSubSubDir = [sProcessedAudioSubDir, 'Clean\'];
-    sCuttedAudioSubSubDir = [sCuttedAudioSubDir, 'Clean\'];
+    sProcessedAudioSubSubDir = [sProcessedAudioDir, sProcessLable{2}, '\'];
+    sCuttedAudioSubSubDir = [sCuttedAudioDir, sProcessLable{2},'\'];
 
     mkdir(sCuttedAudioSubSubDir);
 
