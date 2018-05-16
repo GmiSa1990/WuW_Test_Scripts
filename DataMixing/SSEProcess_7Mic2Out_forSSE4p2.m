@@ -7,8 +7,8 @@ function SSEProcess_7Mic2Out_forSSE4p2(audio_location, result_location, sse_work
     SCDName_Short = '7Mic2Out_SSE4p2';
     
     AudioLocationList = getAllFiles(audio_location);
-    AudioLocationList = AudioLocationList(1:14:end);
-    count = length(AudioLocationList);
+    AudioLocationList = AudioLocationList(1:7:end);
+    count = numel(AudioLocationList);
     
     vfilename = [sse_work_dir, 'prg_7MicUCAC_2Out.v'];
     
